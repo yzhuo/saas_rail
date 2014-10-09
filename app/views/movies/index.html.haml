@@ -16,23 +16,7 @@
         %td= movie.release_date
         %td= link_to "More about #{movie.title}", movie_path(movie)
 		
--# in app/views/movies/show.html.haml
- 
-%h2 Details about #{@movie.title}
- 
-%ul#details
-  %li
-    Rating:
-    = @movie.rating
-  %li
-    Released on:
-    = @movie.release_date.strftime("%B %d, %Y")
- 
-%h3 Description:
- 
-%p#description= @movie.description
- 
-= link_to 'Back to movie list', movies_path
+
 -# add to end of index.html.haml
  
 = link_to 'Add new movie', new_movie_path
